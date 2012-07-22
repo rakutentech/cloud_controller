@@ -202,3 +202,12 @@ runtimes:
 #  port: 34500
 #  user: thin
 #  password: thin
+
+# end point where we can have access to the logs
+app_logs_file_viewer:
+  primary:
+    host: 127.0.0.1
+    port: 8000
+  secondary:
+    host: 127.0.0.1
+    port: 8001

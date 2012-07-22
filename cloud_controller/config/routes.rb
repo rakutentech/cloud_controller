@@ -81,6 +81,9 @@ CloudController::Application.routes.draw do
   get 'apps/:name/instances/:instance_id/files'       => 'apps#files'
   get 'apps/:name/instances/:instance_id/files/*path' => 'apps#files'
 
+  # download app log from Applications Log Server
+  get 'logs(/:name(/:date(/:instance_index(/:file.:extension))))' => 'logs#files'
+
   # Index route should be last.
   root :to => "default#index"
 
