@@ -98,6 +98,10 @@ GEM
     activesupport (3.0.14)
     addressable (2.2.4)
     arel (2.0.10)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
     chronic (0.6.4)
@@ -201,6 +205,7 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (0.3.33)
     uuidtools (2.1.2)
+    xml-simple (1.1.1)
     yajl-ruby (0.8.3)
 
 PLATFORMS
@@ -208,6 +213,7 @@ PLATFORMS
 
 DEPENDENCIES
   SystemTimer (~> 1.2)
+  aws-s3
   bcrypt-ruby (~> 2.1.4)
   cf-uaa-client (~> 1.0)!
   ci_reporter
